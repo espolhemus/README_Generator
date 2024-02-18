@@ -23,32 +23,32 @@ This project uses Node and Inquirer to generate a README.md file based on user i
 
 ## Installation
   The installation instructions for this project are as follows:
-  - npm i to install the necessary dependencies, and node index.js to launch the application.
+  - Use npm i to install the necessary dependencies, and then run node index.js to launch the application.
 
 ## Usage
 
   - The application is deployed at the following location:
-   Not applicable.
+   This application is not being deployed.
 
    - The screenshot of the deployed application is as follows:
 
-    ![Screenshot of Deployed Application](assets/images/Not applicable)
+    ![Screenshot of Deployed Application](assets/images/Not applicable.)
 
    - The location of the GitHub repository is:
     https://github.com/espolhemus/README_Generator
 
     - The screenshot of the repository is as follows:
 
-    ![Screenshot of Repository](assets/images/filename.png)
+    ![Screenshot of Repository](assets/images/repository_screenshot_20240218.png)
 
 ## Credits
   The following individuals contributed to this project:
 
-    - There are no other contributors.
+    - There are no other contributors to this project.
 
   In addition, the following resources were used in the creation of this project:
 
-    - Starter code for this project was provided, and the Xpert Learning Assistant was utilized.
+    - Starter Code was provided for this project, and the Xpert Learning Assistant was utilized, along with the Professional README Guidelines and the Vidudeo suSubmission Guidelines on the Filull Stacik BLog
 
 ## License
  This project is licensed according to the terms of the MIT license.
