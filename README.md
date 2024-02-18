@@ -26,19 +26,17 @@ This project uses Node and Inquirer to generate a README.md file based on user i
   - Use npm i to install the necessary dependencies, and then run node index.js to launch the application.
 
 ## Usage
-
    The application is deployed at the following location:
-   This application is not being deployed; a video walkthrough can be found at (https://drive.google.com/file/d/1wlKOdruiDrynNZIhuPaJWBl0qQDi_pbW/view).
-
-    A video of deployed application can be found at:
-
-    ![Video of Deployed Application](https://drive.google.com/file/d/1wlKOdruiDrynNZIhuPaJWBl0qQDi_pbW/view).
+      This application is not being deployed; a video walkthrough can be found at (https://drive.google.com/file/d/1wlKOdruiDrynNZIhuPaJWBl0qQDi_pbW/view).
+   
+   A video of deployed application can be found at:
+   - ![Video of Deployed Application](https://drive.google.com/file/d/1wlKOdruiDrynNZIhuPaJWBl0qQDi_pbW/view).
 
     The location of the GitHub repository is:
-    https://github.com/espolhemus/README_Generator
+   - https://github.com/espolhemus/README_Generator
 
     The screenshot of the repository is as follows:
-    ![Screenshot of Repository](/assets/images/repository_screenshot_20240218.png).
+   - ![Screenshot of Repository](/assets/images/repository_screenshot_20240218.png).
 
 ## Credits
   The following individuals contributed to this project:
