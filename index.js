@@ -20,6 +20,23 @@ const questions = [
         name: 'installationInstructions',
         message: 'What are the installation instructions for your project?',
     },
+    {   type: 'input',
+        name: 'deploymentLocation',
+        message: 'What is the URL of your deployed application?',
+    },
+    {   type: 'input',
+        name: 'deployedScreenshotFileName',
+        message: 'What is the filename of the screenshot of the deployed application?',
+    },
+    {
+        type: 'input',
+        name: 'repositoryLocation',
+        message: 'What is the location of your repository?',
+    },
+    {   type: 'input',
+        name: 'repositoryScreenshotFileName',
+        message: 'What is the filename of the screenshot of the repository?',
+    },
     {
         type: 'choice',
         name: 'licenseType',
@@ -28,8 +45,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'projectContributiors',
+        name: 'projectContributors',
         message: 'Please provide the names of the contributors to your project.',
+    },
+    {
+        type: 'input',
+        name: 'projectCredits',
+        message: 'Please detail any other credits or acknowledgements for your project.',
     },
     {
         type: 'input',
@@ -48,23 +70,27 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'deploymentImageName',
-        message: 'What is the name of the screenshot associated with your deployed application? (If none, enter "none")',
-    },
-    {
-        type: 'input',
-        name: 'repositoryImageName',
-        message: 'What is the name of the image associated with your repository? (If none, enter "none")',
-    },
-    {
-        type: 'input',
         name: 'emailAddress',
         message: 'Enter your email address.',
     },
 ];
 
+// Function to check to see if README.md exists, if it does, it will be overwritten
+function fileExists(fileName) {
+    fs.access(fileName, fs.constants.F_OK, (err) => {
+        if (err) {
+            console.log('File does not exist, creating README.md...');
+            return false;
+        }
+        console.log('File exists, overwriting README.md...');
+        return true;
+    });
+}
+
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    fileExists(fileName);
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('Successfully created README.md!')
     );
@@ -75,7 +101,7 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log('Generating README...');
         console.log(answers);
-        // writeToFile('README.md', generateMarkdown({ ...answers }));
+        writeToFile('README.md', generateMarkdown({ ...answers }));
     });
 }
 
