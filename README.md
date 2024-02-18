@@ -32,13 +32,12 @@ This project uses Node and Inquirer to generate a README.md file based on user i
 
    - A video of deployed application can be found at:
 
-    ![Video of Deployed Application](https://drive.google.com/file/d/1wlKOdruiDrynNZIhuPaJWBl0qQDi_pbW/view))
+    ![Video of Deployed Application](https://drive.google.com/file/d/1wlKOdruiDrynNZIhuPaJWBl0qQDi_pbW/view)
 
    - The location of the GitHub repository is:
     https://github.com/espolhemus/README_Generator
 
     - The screenshot of the repository is as follows:
-
     ![Screenshot of Repository](/assets/images/repository_screenshot_20240218.png)
 
 ## Credits
